@@ -13,7 +13,7 @@
             <router-link :to="{ name: 'login' }"><button type="button" class="btn btn-primary rounded-pill  mx-1"
                     style="width:10rem" v-if="!isLooggedIn">Login</button></router-link>
             <button @click="handleSignOut" type="button" class="btn btn-primary rounded-pill mx-1" style="width:10rem"
-                v-if="isLooggedIn">Sigout</button>
+                v-if="isLooggedIn">Logout</button>
             <router-link :to="{ name: 'perfil' }"><button type="button" class="btn btn-primary rounded-pill  mx-1"
                     style="width:10rem" v-if="isLooggedIn">Perfil</button></router-link>
 

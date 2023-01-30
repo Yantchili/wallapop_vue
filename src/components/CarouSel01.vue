@@ -20,7 +20,7 @@
             </div>
             <div class="col ">
                 <div class="card h-auto border-0 text-center">
-                    <a href="/search_result?nombre=coche">
+                    <router-link :to="{ name: 'searchedProduct', query: { title: 'Coches' } }">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                             class="bi bi-car-front-fill card-img-top" viewBox="0 0 16 16">
                             <path d=" M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792
@@ -34,7 +34,7 @@
                             4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0
                             0-.447.276L2.906 5.19Z" />
                         </svg>
-                    </a>
+                    </router-link>
                     <div class="card-body ">
                         <h5 class="card-title fs-6 fw-light">Coches</h5>
                     </div>
@@ -42,13 +42,13 @@
             </div>
             <div class="col ">
                 <div class="card h-auto border-0 text-center">
-                    <a href="/search_result?nombre=moto">
+                    <router-link :to="{ name: 'searchedProduct', query: { title: 'Motos' } }">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                             class="bi bi-scooter card-img-top" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
                                 d="M9 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-.39l1.4 7a2.5 2.5 0 1 1-.98.195l-.189-.938-2.43 3.527A.5.5 0 0 1 9.5 13H4.95a2.5 2.5 0 1 1 0-1h4.287l2.831-4.11L11.09 3H9.5a.5.5 0 0 1-.5-.5ZM3.915 12a1.5 1.5 0 1 0 0 1H2.5a.5.5 0 0 1 0-1h1.415Zm8.817-.789A1.499 1.499 0 0 0 13.5 14a1.5 1.5 0 0 0 .213-2.985l.277 1.387a.5.5 0 0 1-.98.196l-.278-1.387Z" />
                         </svg>
-                    </a>
+                    </router-link>
                     <div class="card-body ">
                         <h5 class="card-title fs-6 fw-light">Motos</h5>
                     </div>
@@ -56,13 +56,13 @@
             </div>
             <div class="col ">
                 <div class="card h-auto border-0 text-center">
-                    <a href="/search_result?nombre=Inmobiliaria">
+                    <router-link :to="{ name: 'searchedProduct', query: { title: 'Inmobiliaria' } }">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                             class="bi bi-houses card-img-top" viewBox="0 0 16 16">
                             <path
                                 d="M5.793 1a1 1 0 0 1 1.414 0l.647.646a.5.5 0 1 1-.708.708L6.5 1.707 2 6.207V12.5a.5.5 0 0 0 .5.5.5.5 0 0 1 0 1A1.5 1.5 0 0 1 1 12.5V7.207l-.146.147a.5.5 0 0 1-.708-.708L5.793 1Zm3 1a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708L8.793 2Zm.707.707L5 7.207V13.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V7.207l-4.5-4.5Z" />
                         </svg>
-                    </a>
+                    </router-link>
                     <div class="card-body ">
                         <h5 class="card-title fs-6 fw-light">Inmobiliaria</h5>
                     </div>
@@ -70,13 +70,13 @@
             </div>
             <div class="col ">
                 <div class="card h-auto border-0 text-center">
-                    <a href="/search_result?nombre=libro">
+                    <router-link :to="{ name: 'searchedProduct', query: { title: 'Libros' } }">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                             class="bi bi-book card-img-top" viewBox="0 0 16 16">
                             <path
                                 d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
-                        </svg>
-                    </a>
+                        </svg> </router-link>
+
                     <div class="card-body ">
                         <h5 class="card-title fs-6 fw-light">Libros</h5>
                     </div>
@@ -84,13 +84,13 @@
             </div>
             <div class="col ">
                 <div class="card h-auto border-0 text-center">
-                    <a href="/search_result?nombre=electronica">
+                    <router-link :to="{ name: 'searchedProduct', query: { title: 'electronica' } }">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                             class="bi bi-laptop card-img-top" viewBox="0 0 16 16">
                             <path
                                 d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
                         </svg>
-                    </a>
+                    </router-link>
                     <div class="card-body ">
                         <h5 class="card-title fs-6 fw-light">informatica y electronica</h5>
                     </div>
@@ -98,13 +98,13 @@
             </div>
             <div class="col ">
                 <div class="card h-auto border-0 text-center">
-                    <a href="/search_result?nombre=TV">
+                    <router-link :to="{ name: 'searchedProduct', query: { title: 'tv' } }">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                             class="bi bi-tv card-img-top" viewBox="0 0 16 16">
                             <path
                                 d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z" />
                         </svg>
-                    </a>
+                    </router-link>
                     <div class="card-body ">
                         <h5 class="card-title fs-6 fw-light">TV, audio y foto</h5>
                     </div>

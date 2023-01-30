@@ -19,7 +19,7 @@ const routes: Array<RouteRecordRaw> = [
     },
   },
   {
-    path: "/products?:title",
+    path: "/products",
     name: "searchedProduct",
     component: () =>
       import(/*webpackChunkName: searchedProduct*/ "../views/searchedProduct.vue"),
@@ -31,25 +31,8 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/products',
-    // name: 'allProducts',
-    // component: () => import(/* webpackChunkName: "products" */ '../views/allProducts.vue')，
-    children: [
-      {
-        name: 'allProducts',
-        path: '',
-        component: () => import(/* webpackChunkName: "products" */ '../views/allProducts.vue')
-      },
-      {
-        name: "searchedProduct",
-        path: '/?:title',
-        component: () =>
-          import(/*webpackChunkName: searchedProduct*/ "../views/searchedProduct.vue"),
-      },
-    ],
-    props: (route) => {
-      const title = String(route.query.title);
-      return { title };
-    }
+    name: 'allProducts',
+    component: () => import(/* webpackChunkName: "products" */ '../views/allProducts.vue')
   },
   {
     path: '/perfil',
